@@ -9,7 +9,7 @@ CleanAge = Age(~badData);
 CleanBMI = BMI(~badData);
 
 % Plot as a scatter graph
-plot(Age/12,BMI,'o');
+plot(CleanAge/12,CleanBMI,'o');
 xlabel('Age, years');
 ylabel('BMI');
 title('Age vs BMI');
