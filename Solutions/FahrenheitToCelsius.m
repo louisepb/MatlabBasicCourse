@@ -12,6 +12,7 @@ end
 toc;
 
 %% Loop with preallocated vector
+Tc = [];
 tic
 Tc = zeros(size(Tf));
 ind = 1;

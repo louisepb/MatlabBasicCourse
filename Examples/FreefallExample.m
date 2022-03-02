@@ -1,5 +1,16 @@
-FinalTime = 10;
-time = linspace(0,FinalTime,10);
-dist = 0.5*9.81*time.^2;
-disp('Distance m/s');
-disp(dist');
+%Freefall example script
+ 
+%Define varibles g, time, distance
+g = 9.81;
+
+% User input of final time
+lastTime = input('Please input final time ');
+
+% Time increments vector
+times = linspace(0, lastTime, 10);
+
+%Calculate distances
+distances = 0.5*g*times.*times;
+
+% Output distances
+disp(distances);
